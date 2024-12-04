@@ -1,4 +1,4 @@
-for i in $(seq -w 3 25); do
+for i in $(seq -w 1 25); do
     dir="Day$i"
     mkdir "$dir"
     touch "$dir/Part01.js" "$dir/Part02.js" "$dir/input.txt" "$dir/Questions.md"
