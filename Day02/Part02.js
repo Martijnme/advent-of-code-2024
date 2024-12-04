@@ -39,4 +39,4 @@ ans = reports.map((level) => {
 
 console.log(ans.filter(Boolean).length);
 
-// answer: 306
+// answer: 366
