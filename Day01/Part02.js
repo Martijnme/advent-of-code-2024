@@ -1,25 +1,25 @@
 const readFile = require("../commons/readFile");
 
-let anwser = 0;
+let ans = 0;
 
-const column1 = [];
-const column2 = {};
+const col1 = [];
+const col2 = {};
 
 const locations = readFile("Day01/input.txt").lines;
 
 locations.forEach((line) => {
   const parts = line.trim().split(/\s+/);
   if (parts.length === 2) {
-    column1.push(parts[0]);
-    if (column2[parts[1]]) column2[parts[1]]++;
-    else column2[parts[1]] = 1;
+    col1.push(parts[0]);
+    if (col2[parts[1]]) col2[parts[1]]++;
+    else col2[parts[1]] = 1;
   }
 });
-column1.sort();
+col1.sort();
 
-column1.forEach((element) => {
-  n = column2[element] || 0;
-  anwser += element * n;
+col1.forEach((elm) => {
+  n = col2[elm] || 0;
+  ans += elm * n;
 });
 
 // anwser: 18934359;
