@@ -1,6 +1,7 @@
 # Day 02 Questions
 
 Add the questions for Day 02 here.
+
 --- Day 2: Red-Nosed Reports ---
 
 Fortunately, the first location The Historians want to search isn't a long walk from the Chief Historian's office.
